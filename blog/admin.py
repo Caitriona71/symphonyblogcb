@@ -12,4 +12,6 @@ class PostAdmin(SummernoteModelAdmin):
     list_filter = ('status', 'created_on')
     summernote_fields = ('content')
 
+@admin.register(Comment)
+
 # Register your models here.
