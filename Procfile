@@ -1,1 +1,1 @@
-web: gunicorn symphonycb.wsgi
+web: gunicorn symphony.wsgi
