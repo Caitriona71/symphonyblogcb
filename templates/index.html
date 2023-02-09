@@ -27,7 +27,7 @@
                                 </div>
                             </div>
                             <!-- Link to the post detail page -->
-                            <a href="#" class="post-link">
+                            <a href="{% url post_detail post.slug %}" class="post-link">
                                 <!-- Display the post's title -->
                                 <h2 class="card-title">{{ post.title }}</h2>
                                 <!-- Display the post's excerpt -->
