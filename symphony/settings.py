@@ -31,6 +31,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['symphonycb.herokuapp.com', 'localhost']
 
+# To prevent 500 errors during login and registration
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 # Application definition
 
@@ -131,7 +133,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILES_DIR = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
