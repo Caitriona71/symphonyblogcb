@@ -64,3 +64,5 @@ class PostDetail(View):
                 "liked": liked
             },
         )
+
+class PostLike(View):
