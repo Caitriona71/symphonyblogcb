@@ -35,6 +35,12 @@
                 <div class="row">
 
                     <div class="col-1">
+                        <strong>
+                            {% if user is authenticated %}
+                            <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+                                {% csrf_token %}
+                            </form>
+                        </strong>
                         <!-- The number of likes goes before the closing strong tag -->
                         <strong class="text-secondary"><i class="far fa-heart"></i> {{ post.number_of_likes }} </strong>
                     </div>
