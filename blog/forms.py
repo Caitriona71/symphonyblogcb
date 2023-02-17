@@ -1,4 +1,5 @@
 from .models import Comment, Post
+from django_summernote.widgets import SummernoteWidget
 from django import forms
 
 
