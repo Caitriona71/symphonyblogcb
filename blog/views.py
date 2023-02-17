@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
 from .models import Post
-from .forms import CommentForm, PostForm
+from .forms import CommentForm
 
 
 # Create your views here.
@@ -81,12 +81,12 @@ class PostLike(View):
                   
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-class PostAdd(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
+class CreatePost(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
     
     model = Post
-    template_name = 'post_add.html'
+    template_name = 'create_post.html'
     form_class = PostForm
-    success_message = 'Post Added'
+    success_message = 'Post Created'
 
     def form_valid(self, form):
         
