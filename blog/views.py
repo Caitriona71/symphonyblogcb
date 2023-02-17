@@ -80,3 +80,15 @@ class PostLike(View):
             post.likes.add(request.user)
                   
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+class PostAdd(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
+    
+    model = Post
+    template_name = 'post_add.html'
+    form_class = PostForm
+    success_message = 'Post Added'
+
+    def form_valid(self, form):
+        
+        form.instance.author = self.request.user
+        return super().form_valid(form)
