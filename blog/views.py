@@ -81,8 +81,7 @@ class PostLike(View):
                   
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-class CreatePost(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
-    
+class CreatePost(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):   
     model = Post
     template_name = 'create_post.html'
     form_class = PostForm
@@ -92,7 +91,7 @@ class CreatePost(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
         form.instance.author = self.request.user
         return super().form_valid(form)
 
-class UpdatePost(LoginRequiredMixin, SuccessMessageMixin, generic.UpdateView):
+class UpdatePost(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, generic.UpdateView):
     model = Post
     template_name = 'update_post.html'
     form_class = PostForm
