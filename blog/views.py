@@ -116,5 +116,11 @@ class PostDelete(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, g
         messages.success(self.request, self.success_message)
         return super(PostDelete, self).delete(request, *args, **kwargs)
 
+    def test_func(self):
+        post = self.get_object()
+        if self.request.user == post.author:
+            return True
+        return False
+
 
 
