@@ -107,7 +107,14 @@ class UpdatePost(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, g
             return True
         return False
 
+class PostDelete(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, generic.DeleteView):
+    model = Post
+    template_name = 'post_detail.html'
+    success_message = 'Post Deleted'
 
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(PostDelete, self).delete(request, *args, **kwargs)
 
 
 
