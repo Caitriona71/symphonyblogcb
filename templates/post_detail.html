@@ -25,9 +25,22 @@
     </div>
 </div>
 
+{% if request.user == post.author %}
 <div class="container">
     <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
+        <div class="col-xl-4 offset-xl-8">
+            <a href="{% url 'update_post' post.slug %}" class="btn btn-signup m-1"><i class="fa fa-edit"></i> Update
+                this post</a>
+            <button type="button" class="btn btn-del m-1" data-toggle="modal" data-target="#postModal"><i
+                    class="fa fa-trash"></i> Delete this post</button>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<div class="container">
+    <div class="row">
+        <div class="col card mb-4 mt-3 left top">
             <div class="card-body">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->

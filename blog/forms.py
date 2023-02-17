@@ -16,4 +16,7 @@ class PostForm(forms.ModelForm):
             'title',
             'featured_image',
             'content'
-            ]
+        ]
+        widgets = {
+            'content': SummernoteWidget(),
+        }
