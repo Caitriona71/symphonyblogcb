@@ -83,7 +83,7 @@ class PostLike(View):
 
 class CreatePost(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):   
     model = Post
-    template_name = 'create_post.html'
+    template_name = 'post_form.html'
     form_class = PostForm
     success_message = 'Post Created'
 
