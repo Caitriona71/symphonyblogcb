@@ -69,19 +69,21 @@ class PostDetail(View):
             },
         )
 
+
 class PostLike(View):
 
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
-        
+
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)
         else:
             post.likes.add(request.user)
-                  
+
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-class CreatePost(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):   
+
+class CreatePost(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
     model = Post
     template_name = 'post_form.html'
     form_class = PostForm
@@ -91,11 +93,13 @@ class CreatePost(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
         form.instance.author = self.request.user
         return super().form_valid(form)
 
-class UpdatePost(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, generic.UpdateView):
+
+class UpdatePost(LoginRequiredMixin, SuccessMessageMixin,
+                 UserPassesTestMixin, generic.UpdateView):
     model = Post
     template_name = 'update_post.html'
     form_class = PostForm
-    success_message = 'Post Updated'
+    success_message = 'Post Edited'
 
     def form_valid(self, form):
         form.instance.author = self.request.user
@@ -107,7 +111,9 @@ class UpdatePost(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, g
             return True
         return False
 
-class PostDelete(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, generic.DeleteView):
+
+class PostDelete(LoginRequiredMixin, SuccessMessageMixin,
+                 UserPassesTestMixin, generic.DeleteView):
     model = Post
     template_name = 'post_detail.html'
     success_message = 'Post Deleted'
@@ -121,6 +127,3 @@ class PostDelete(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, g
         if self.request.user == post.author:
             return True
         return False
-
-
-
