@@ -152,6 +152,17 @@ h2 {
     color:#1a1a1a;
 }
 
+.page-link {
+    background-color: #1a1a1a;
+    color: #F9FAFC;
+}
+
+.page-link:hover {
+    background-color: #F9FAFC;
+    color: #1a1a1a;
+    border: none;
+}
+
 .footer {
     background-color: #1a1a1a;   
 }
