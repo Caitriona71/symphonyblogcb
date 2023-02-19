@@ -137,6 +137,21 @@ h2 {
     color:#F9FAFC;
 }
 
+.btn-del:hover {
+    background-color: #F9FAFC;
+    color:#1a1a1a;
+}
+
+.btn-sec {
+    background-color: #1a1a1a;
+    color: #F9FAFC;
+}
+
+.btn-sec:hover {
+    background-color: #F9FAFC;
+    color:#1a1a1a;
+}
+
 .footer {
     background-color: #1a1a1a;   
 }
