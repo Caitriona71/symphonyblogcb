@@ -10,7 +10,7 @@ h2 {
     font-family: Mea Culpa, sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #1a1a1a;
+    color: #F9FAFC;
 }
 
 .thin {
@@ -32,6 +32,7 @@ h2 {
 .navbar {
     background-color: #1a1a1a;
     font-family: Roboto Slab, serif;
+    text-decoration-color: #F9FAFC;
 }
 
 .card {
@@ -82,8 +83,7 @@ h2 {
     color: #1a1a1a;
 }
 
-.post-link:hover,
-.page-link {
+.post-link:hover {
     color: #6b6b6b;
 }
 
@@ -159,7 +159,7 @@ h2 {
 
 .page-link:hover {
     background-color: #F9FAFC;
-    color: #1a1a1a;
+    color: #6b6b6b;;
     border: none;
 }
 
