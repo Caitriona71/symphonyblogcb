@@ -1,28 +1,30 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<!-- Heading -->
 
-Welcome Caitriona71,
+# Symphony ![View the live site here](https://)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Introduction
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
+![Am I Responsive](./assets/documentation/responsive-view.png)
 ## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Symphony is a fully responsive classical music blog website. Users have the ability to like and comment on posts.
 
-`python3 -m http.server`
+## User Experience
 
-A blue button should appear to click: _Make Public_,
+### User Stories
 
-Another blue button should appear to click: _Open Browser_.
+This section describes the user stories derived from each EPIC.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Admin
 
-A blue button should appear to click: _Make Public_,
+As a ---- I can ---- so that ----
+As a ---- I can ---- so that ----
+As a ---- I can ---- so that ----
+As a ---- I can ---- so that ----
+As a ---- I can ---- so that ----
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
 To log into the Heroku toolbelt CLI:
 

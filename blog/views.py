@@ -5,11 +5,11 @@ from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
-from .models import Post
+from .models import Post, Comment
 from .forms import CommentForm, PostForm
 
 
-# Create your views here.
+# Posts list view
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
@@ -17,6 +17,7 @@ class PostList(generic.ListView):
     paginate_by = 6
 
 
+# Selected post detail view
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
@@ -71,6 +72,7 @@ class PostDetail(View):
         )
 
 
+# Remove or add like on post detail page view
 class PostLike(View):
 
     def post(self, request, slug, *args, **kwargs):
@@ -84,6 +86,8 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
+# Create a post with a post form view with
+# success message feedback
 class CreatePost(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
     model = Post
     template_name = 'post_form.html'
@@ -95,6 +99,8 @@ class CreatePost(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
         return super().form_valid(form)
 
 
+# Update a post on post detail page view with
+# success message feedback
 class UpdatePost(LoginRequiredMixin, SuccessMessageMixin,
                  UserPassesTestMixin, generic.UpdateView):
     model = Post
@@ -113,10 +119,13 @@ class UpdatePost(LoginRequiredMixin, SuccessMessageMixin,
         return False
 
 
+# Delete a post on post detail page view with
+# success message feedback
 class PostDelete(LoginRequiredMixin, SuccessMessageMixin,
                  UserPassesTestMixin, generic.DeleteView):
     model = Post
     template_name = 'post_detail.html'
+    success_url = '/'
     success_message = 'Post Deleted'
 
     def delete(self, request, *args, **kwargs):

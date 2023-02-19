@@ -1,6 +1,4 @@
 from django.db import models
-
-# Create your models here.
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.urls import reverse
@@ -9,6 +7,7 @@ from django.template.defaultfilters import slugify
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
+# Model for blog posts
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -37,6 +36,7 @@ class Post(models.Model):
         return reverse('post_detail', kwargs={'slug': self.slug})
 
 
+# Model for comments
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE,
                              related_name="comments")

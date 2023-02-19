@@ -30,6 +30,7 @@ h2 {
 }
 
 .navbar {
+    background-color: #1a1a1a;
     font-family: Roboto Slab, serif;
 }
 
@@ -70,9 +71,9 @@ h2 {
     height: 100%;
     width: 150%;
     background: #1a1a1a;
-    -webkit-transform: skew(20deg);
-    -moz-transform: skew(20deg);
-    transform: skew(20deg);
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    transform: skew(15deg);
     z-index: 100;
 }
 
@@ -129,6 +130,11 @@ h2 {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+.btn-del {
+    background-color:#1a1a1a;
+    color:#F9FAFC;
 }
 
 .footer {
