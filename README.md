@@ -16,7 +16,7 @@ Symphony is a fully responsive classical music blog website. Users have the abil
 
 This section describes the user stories derived from each EPIC.
 
-### Admin
+### Admin/Site Staff
 
 As a ---- I can ---- so that ----
 As a ---- I can ---- so that ----
@@ -25,7 +25,23 @@ As a ---- I can ---- so that ----
 As a ---- I can ---- so that ----
 As a ---- I can ---- so that ----
 
+### Site User
 
+As a ---- I can ---- so that ----
+As a ---- I can ---- so that ----
+
+As a ---- I can ---- so that ----
+As a ---- I can ---- so that ----
+
+### Logged in User
+
+As a ---- I can ---- so that ----
+As a ---- I can ---- so that ----
+
+## Design
+
+### Color Scheme
+The main colors used throughout the blog were black, white, and grey. This creates a clean and easy-to-navigate look for the blog. 
 
 To log into the Heroku toolbelt CLI:
 
