@@ -10,7 +10,7 @@ Symphony is a fully responsive classical music blog website. Users have the abil
 
 ## Design
 
-I used an agile project management method, together with the MoSCoW prioritization method, to help me plan and track my work effectively. I set up a project in Github and created a template for user stories. The user stories are categorized and labelled as essential - "Must Have", desirable - "Should Have" and nice to have but not essential - "Could Have". Milestones were created and the user stories are attached to the milestones they pertain to. The user stories were then added to a kanban board which has three columns, To Do, In Progress and Done. All user stories are initially placed in the To Do column and when work commences on the project some user stories are transferred to the In Progress column. When work is completed on each user story they are then moved across to the Done column.
+I used an agile project management method, together with the **MoSCoW** prioritization method, to help me plan and track my work effectively. I set up a project in Github and created a template for user stories. The user stories are categorized and labelled as essential - **Must Have**, desirable - **Should Have** and nice to have but not essential - **Could Have**. **Milestones** were created and the user stories are attached to the milestones they pertain to. The user stories were then added to a kanban board which has three columns, **ToDo**, **In Progress** and **Done**. All user stories are initially placed in the **ToDo** column and when work commences on the project some user stories are transferred to the **In Progress** column. When work is completed on each user story they are then moved across to the **Done** column.
 <br>
 
 ## User Experience
@@ -43,7 +43,6 @@ I used an agile project management method, together with the MoSCoW prioritizati
 
 ### Color Scheme
 The main colours used throughout the blog were black, white, and grey. This creates a clean and easy-to-navigate look for the blog. 
-<br>
 
 ### Typography
 
