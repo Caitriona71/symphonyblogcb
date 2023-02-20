@@ -10,8 +10,7 @@ Symphony is a fully responsive classical music blog website. Users have the abil
 
 ## Design
 
-I used an agile project management method, together with the **MoSCoW** prioritization method, to help me plan and track my work effectively. I set up a project in Github and created a template for user stories. The user stories are categorized and labelled as essential - **Must Have**, desirable - **Should Have** and nice to have but not essential - **Could Have**. **Milestones** were created and the user stories are attached to the milestones they pertain to. The user stories were then added to a kanban board which has three columns, **ToDo**, **In Progress** and **Done**. All user stories are initially placed in the **ToDo** column and when work commences on the project some user stories are transferred to the **In Progress** column. When work is completed on each user story they are then moved across to the **Done** column.
-<br>
+An agile project management method was used, together with the **MoSCoW** prioritization method, to help me plan and track my work effectively. I set up a project in Github and created a template for user stories. The user stories are categorized and labelled as essential - **Must Have**, desirable - **Should Have** and nice to have but not essential - **Could Have**. **Milestones** were created and the user stories are attached to the milestones they pertain to. The user stories were then added to a kanban board which has three columns, **ToDo**, **In Progress** and **Done**. All user stories are initially placed in the **ToDo** column and when work commences on the project some user stories are transferred to the **In Progress** column. When work is completed on each user story they are then moved across to the **Done** column.
 
 ## User Experience
 
@@ -19,7 +18,7 @@ I used an agile project management method, together with the **MoSCoW** prioriti
 
 ### Project Creator
 
-- As the **project creator** I need to create the base setup of the application so that other features can be added.
+- As **project creator** I need to create the base setup of the application so that other features can be added.
 
 ### Admin/Site Staff
 
@@ -42,6 +41,7 @@ I used an agile project management method, together with the **MoSCoW** prioriti
 - As a **logged in user** I can like or unlike a post so that I can give feedback on the content.
 
 ### Color Scheme
+
 The main colours used throughout the blog were black, white, and grey. This creates a clean and easy-to-navigate look for the blog. 
 
 ### Typography
@@ -86,17 +86,14 @@ The database is a PostgreSQL database, hosted on [ElephantSQL](https:www.elephan
 #### Django
 [Django](https://www.djangoproject.com/) was the web framework used to build the project.
 
-- Django Crispy Forms
+#### Django Crispy Forms
 [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest) was used to give forms improved styling.
 
-- Summernote
+#### Summernote
 [Summernote](https://summernote.org/) for the forms to create the blog posts.
 
-- Allauth
+#### Allauth
 [Allauth](https://django-allauth.readthedocs.io/en/latest/) to enable users to create accounts and log in. Allauth is a third-party Django application.
-
-#### Am I Responsive
-[AmIResponsive](https://www.amiresponsive.co.uk)
 
 ## Hosting
 
@@ -116,7 +113,16 @@ The database is a PostgreSQL database, hosted on [ElephantSQL](https:www.elephan
 
 [Lucidchart](https://www.lucidchart.com/) for the UML Use Case Diagram.
 
-### Manual Testing
+[AmIResponsive](https://www.amiresponsive.co.uk) was used for the responsiveness of the site.
+
+## Testing
+
+The W3C Markup Validator, W3C CSS Validator Services, JS Hint and PEP8 were used to validate the code to ensure there were no syntax errors in the project.
+
+### HTML
+
+
+
 
 
 
