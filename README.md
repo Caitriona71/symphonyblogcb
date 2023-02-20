@@ -16,35 +16,30 @@ I used an agile project management method, together with the MoSCoW prioritizati
 ## User Experience
 
 ### User Stories
-<br>
 
 ### Project Creator
 
-- As the project creator I need to create the base setup of the application so that other features can be added.
-<br>
+- As the **project creator** I need to create the base setup of the application so that other features can be added.
 
 ### Admin/Site Staff
 
-- As site admin/staff I can create draft posts so that I can work on them and complete the content.
-- As site admin/staff I can create, read, update and delete particular posts, so that I can manage the content of the blog.
-- As site admin/staff I can approve comments, so that I can decide if a comment is suitable or unsuitable for viewing.
-<br>
+- As **site admin/staff** I can create draft posts so that I can work on them and complete the content.
+- As **site admin/staff** I can create, read, update and delete particular posts, so that I can manage the content of the blog.
+- As **site admin/staff** I can approve comments, so that I can decide if a comment is suitable or unsuitable for viewing.
 
 ### Site User
 
-- As a site user I can view a list of blog posts so that I can choose which one I want to read.
-- As a site user I can select a post to view its full content.
-- As a site user I can view the comments on a particular post so that I can see the discussion about that post.
-- As a site user I can set up and account so that I can comment on and like posts.
-<br>
+- As a **site user** I can view a list of blog posts so that I can choose which one I want to read.
+- As a **site user** I can select a post to view its full content.
+- As a **site user** I can view the comments on a particular post so that I can see the discussion about that post.
+- As a **site user** I can set up and account so that I can comment on and like posts.
 
 ### Logged in User
 
-- As a logged in user I can log into my account so that I can use my role specific features.
-- As a logged in user I can log out of my account so that I can keep my information secure and prevent unauthorized access.
-- As a logged in user I can add comments on a post so that I can join in the conversation.
-- As a logged in user I can like or unlike a post so that I can give feedback on the content.
-<br>
+- As a **logged in user** I can log into my account so that I can use my role specific features.
+- As a **logged in user** I can log out of my account so that I can keep my information secure and prevent unauthorized access.
+- As a **logged in user** I can add comments on a post so that I can join in the conversation.
+- As a **logged in user** I can like or unlike a post so that I can give feedback on the content.
 
 ### Color Scheme
 The main colours used throughout the blog were black, white, and grey. This creates a clean and easy-to-navigate look for the blog. 
@@ -60,14 +55,71 @@ The database is a PostgreSQL database, hosted on [ElephantSQL](https:www.elephan
 
 ### Models
 
-- [Database models](#database-models)
+- [Database models](./readme-docs/database-models/posts-model.png)
+
+
+## Technologies
+
+### Workspace
+
+#### Gitpod
+[GitPod](https://gitpod.io) was the IDE workspace used to build the site.
+
+### Version Control
+
+#### Git
+[Git](https://git-scm.com/) was used for version control, committing and pushing to GitHub.
+
+### GitHub
+[GitHub](https://github.com/) was used to store the repository, files and images pushed from Gitpod.
+
+## Website Design
+
+#### Google Fonts
+[Google Fonts](https://fonts.google.com/) was used for the fonts on the site.
+
+#### Bootstrap
+
+[Bootstrap](https://getbootstrap.com/) was imported for responsiveness and styling of the site.
+
+### Development
+
+#### Django
+[Django](https://www.djangoproject.com/) was the web framework used to build the project.
+
+- Django Crispy Forms
+[Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest) was used to give forms improved styling.
+
+- Summernote
+[Summernote](https://summernote.org/) for the forms to create the blog posts.
+
+#### Am I Responsive
+[AmIResponsive](https://www.amiresponsive.co.uk)
+
+## Hosting
+
+### Heroku
+[Heroku](https://www.heroku.com/) is used to host the application.
+
+### Gunicorn
+[Gunicorn](https://gunicorn.org/) for deploying the project to Heroku
+
+### Cloudinary
+[Cloudinary](https://cloudinary.com/) was used for images and static files.
+
+### ElephantSQL
+[ElephantSQL](https:www.elephantsql.com/) to host the database. ElephantSQL is a cloud-based PostgreSQL database hosting service.
+
+### Manual Testing
 
 
 
 
 
 
-To log into the Heroku toolbelt CLI:
+
+
+To log in:
 
 1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
 2. Scroll down to the *API Key* and click *Reveal*
@@ -75,7 +127,7 @@ To log into the Heroku toolbelt CLI:
 4. In Gitpod, from the terminal, run `heroku_config`
 5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+
 
 ------
 
