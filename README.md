@@ -120,6 +120,14 @@ The database is a PostgreSQL database, hosted on [ElephantSQL](https:www.elephan
 The W3C Markup Validator, W3C CSS Validator Services, JS Hint and PEP8 were used to validate the code to ensure there were no syntax errors in the project.
 
 ### HTML
+[W3CMarkupValidationService](https://validator.w3.org/)
+
+### CSS
+[W3CCSSValidationService](https://jigsaw.w3.org/css-validator/)
+
+#### Javascript
+[JSHint](https://jshint.com/)
+
 
 
 
