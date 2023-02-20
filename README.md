@@ -46,7 +46,7 @@ The main colours used throughout the blog were black, white, and grey. This crea
 
 ### Typography
 
-The main font used is called 'Roboto Slab'. The font used for the blog name is 'Mea Culpa'.
+The main font used is 'Roboto Slab'. The font used for the blog name is 'Mea Culpa'.
 
 ### Database
 
@@ -92,6 +92,9 @@ The database is a PostgreSQL database, hosted on [ElephantSQL](https:www.elephan
 - Summernote
 [Summernote](https://summernote.org/) for the forms to create the blog posts.
 
+- Allauth
+[Allauth](https://django-allauth.readthedocs.io/en/latest/) to enable users to create accounts and log in. Allauth is a third-party Django application.
+
 #### Am I Responsive
 [AmIResponsive](https://www.amiresponsive.co.uk)
 
@@ -108,6 +111,10 @@ The database is a PostgreSQL database, hosted on [ElephantSQL](https:www.elephan
 
 ### ElephantSQL
 [ElephantSQL](https:www.elephantsql.com/) to host the database. ElephantSQL is a cloud-based PostgreSQL database hosting service.
+
+## Frameworks, Libraries and Tools Used
+
+[Lucidchart](https://www.lucidchart.com/) for the UML Use Case Diagram.
 
 ### Manual Testing
 
