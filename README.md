@@ -40,8 +40,16 @@ As a ---- I can ---- so that ----
 
 ## Design
 
+I used an agile project management method, together with the MoSCoW prioritization method, to help me plan and track my work effectively. I set up a project in Github and created a template for user stories. The user stories are categorized and labelled as essential - "Must Have", desirable - "Should Have" and nice to have but not essential - "Could Have". Milestones were created and the user stories are attached to the milestones they pertain to. The user stories were then added to a kanban board which has three columns, To Do, In Progress and Done. All user stories are initially placed in the To Do column and when work commences on the project some user stories are transferred to the In Progress column. When work is completed on each user story they are then moved across to the Done column.
+
 ### Color Scheme
-The main colors used throughout the blog were black, white, and grey. This creates a clean and easy-to-navigate look for the blog. 
+The main colours used throughout the blog were black, white, and grey. This creates a clean and easy-to-navigate look for the blog. 
+
+### Typography
+
+The main font used is called 'Roboto Slab'. The font used for the blog name is 'Mea Culpa'.
+
+##
 
 To log into the Heroku toolbelt CLI:
 

@@ -1,5 +1,5 @@
 body {
-    background-color: #F9FAFC;
+    background-color: #fff;
 }
 
 h2 {
@@ -10,7 +10,7 @@ h2 {
     font-family: Mea Culpa, sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #F9FAFC;
+    color: #1a1a1a;
 }
 
 .thin {
@@ -32,7 +32,6 @@ h2 {
 .navbar {
     background-color: #1a1a1a;
     font-family: Roboto Slab, serif;
-    text-decoration-color: #F9FAFC;
 }
 
 .navbar-brand {
