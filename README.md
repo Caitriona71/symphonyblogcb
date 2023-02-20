@@ -16,9 +16,9 @@ I used an agile project management method, together with the MoSCoW prioritizati
 
 ### User Stories
 
-### Project Developer
+### Project Creator
 
-- As a project developer I need to create the base setup of the application so that other features can be added.
+- As the project creator I need to create the base setup of the application so that other features can be added.
 
 ### Admin/Site Staff
 
