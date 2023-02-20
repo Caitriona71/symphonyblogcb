@@ -4,43 +4,41 @@
 
 ## Introduction
 
+Symphony is a fully responsive classical music blog website. Users have the ability to like and comment on posts.
 
 ![Am I Responsive](./assets/documentation/responsive-view.png)
-## Gitpod Reminders
 
-Symphony is a fully responsive classical music blog website. Users have the ability to like and comment on posts.
+## Design
+
+I used an agile project management method, together with the MoSCoW prioritization method, to help me plan and track my work effectively. I set up a project in Github and created a template for user stories. The user stories are categorized and labelled as essential - "Must Have", desirable - "Should Have" and nice to have but not essential - "Could Have". Milestones were created and the user stories are attached to the milestones they pertain to. The user stories were then added to a kanban board which has three columns, To Do, In Progress and Done. All user stories are initially placed in the To Do column and when work commences on the project some user stories are transferred to the In Progress column. When work is completed on each user story they are then moved across to the Done column.
 
 ## User Experience
 
 ### User Stories
 
-This section describes the user stories derived from each EPIC.
+### Project Developer
+
+- As a project developer I need to create the base setup of the application so that other features can be added.
 
 ### Admin/Site Staff
 
-As a ---- I can ---- so that ----
-As a ---- I can ---- so that ----
-As a ---- I can ---- so that ----
-As a ---- I can ---- so that ----
-As a ---- I can ---- so that ----
-As a ---- I can ---- so that ----
+- As site admin/staff I can create draft posts so that I can work on them and complete the content.
+- As site admin/staff I can create, read, update and delete particular posts, so that I can manage the content of the blog.
+- As site admin/staff I can approve comments, so that I can decide if a comment is suitable or unsuitable for viewing.
 
 ### Site User
 
-As a ---- I can ---- so that ----
-As a ---- I can ---- so that ----
-
-As a ---- I can ---- so that ----
-As a ---- I can ---- so that ----
+- As a site user I can view a list of blog posts so that I can choose which one I want to read.
+- As a site user I can select a post to view its full content.
+- As a site user I can view the comments on a particular post so that I can see the discussion about that post.
+- As a site user I can set up and account so that I can comment on and like posts.
 
 ### Logged in User
 
-As a ---- I can ---- so that ----
-As a ---- I can ---- so that ----
-
-## Design
-
-I used an agile project management method, together with the MoSCoW prioritization method, to help me plan and track my work effectively. I set up a project in Github and created a template for user stories. The user stories are categorized and labelled as essential - "Must Have", desirable - "Should Have" and nice to have but not essential - "Could Have". Milestones were created and the user stories are attached to the milestones they pertain to. The user stories were then added to a kanban board which has three columns, To Do, In Progress and Done. All user stories are initially placed in the To Do column and when work commences on the project some user stories are transferred to the In Progress column. When work is completed on each user story they are then moved across to the Done column.
+- As a logged in user I can log into my account so that I can use my role specific features.
+- As a logged in user I can log out of my account so that I can keep my information secure and prevent unauthorized access.
+- As a logged in user I can add comments on a post so that I can join in the conversation.
+- As a logged in user I can like or unlike a post so that I can give feedback on the content.
 
 ### Color Scheme
 The main colours used throughout the blog were black, white, and grey. This creates a clean and easy-to-navigate look for the blog. 
