@@ -21,7 +21,9 @@ class PostList(generic.ListView):
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
-        queryset = Post.objects.filter(status=1)
+        
+        # queryset = Post.objects.filter(status=1)
+        queryset = Post.objects.all()
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('-created_on')
         liked = False
@@ -73,7 +75,7 @@ class PostDetail(View):
 
 
 # Remove or add like on post detail page view
-class PostLike(View):
+class PostLike(LoginRequiredMixin, View):
 
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
@@ -88,28 +90,17 @@ class PostLike(View):
 
 # Create a post with a post form view with
 # success message feedback
-class CreatePost(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
-    model = Post
-    template_name = 'post_form.html'
-    form_class = PostForm
-    success_message = 'Post Created'
-
-    def form_valid(self, form):
-        form.instance.author = self.request.user
-        return super().form_valid(form)
-
 
 # Update a post on post detail page view with
 # success message feedback
 class UpdatePost(LoginRequiredMixin, SuccessMessageMixin,
                  UserPassesTestMixin, generic.UpdateView):
     model = Post
-    template_name = 'update_post.html'
+    template_name = 'post_add_edit.html'
     form_class = PostForm
     success_message = 'Post Edited'
 
     def form_valid(self, form):
-        form.instance.author = self.request.user
         return super().form_valid(form)
 
     def test_func(self):
@@ -137,3 +128,19 @@ class PostDelete(LoginRequiredMixin, SuccessMessageMixin,
         if self.request.user == post.author:
             return True
         return False
+
+# Create a post with a post form view with
+# success message feedback
+class AddPost(LoginRequiredMixin, SuccessMessageMixin,
+              UserPassesTestMixin, generic.CreateView):
+    model = Post
+    template_name = 'post_add_edit.html'
+    form_class = PostForm
+    success_message = 'Post Created'
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+    def test_func(self):
+        return self.request.user.is_staff

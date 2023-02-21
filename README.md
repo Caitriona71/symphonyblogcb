@@ -128,6 +128,12 @@ The W3C Markup Validator, W3C CSS Validator Services, JS Hint and PEP8 were used
 #### Javascript
 [JSHint](https://jshint.com/)
 
+## Manual Testing
+
+### Home Page
+ǀTestǀ                 ǀTestǀ                               ǀTestǀ                  ǀResultǀ
+ǀ------------------------------ǀ------------------------------ǀ----------------------------------------ǀ------------------ǀ
+
 
 
 

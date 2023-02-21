@@ -1,7 +1,11 @@
 from django.contrib import admin
-from .models import Post, Comment
+from .models import Post, Comment, Contributor
 from django_summernote.admin import SummernoteModelAdmin
 
+
+@admin.register(Contributor)
+class ContributorAdmin(SummernoteModelAdmin):
+    list_display = ('name',)
 
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):

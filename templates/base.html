@@ -46,6 +46,12 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
+                    {% if user.is_staff %}
+                    <!-- Create Post link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'post_form' %}">Create Post</a>
+                    </li>
+                    {% endif %}
                     {% if user.is_authenticated %}
                     <!-- Logout link -->
                     <li class="nav-item">

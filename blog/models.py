@@ -4,6 +4,11 @@ from cloudinary.models import CloudinaryField
 from django.urls import reverse
 from django.template.defaultfilters import slugify
 
+class Contributor(models.Model):
+    name = models.CharField(max_length=80)
+    photo = CloudinaryField('image')
+    bio = models.TextField(blank=False)
+
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
@@ -34,6 +39,11 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('post_detail', kwargs={'slug': self.slug})
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+
+        super().save(*args, **kwargs)
 
 
 # Model for comments

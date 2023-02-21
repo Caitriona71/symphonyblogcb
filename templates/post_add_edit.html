@@ -9,7 +9,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
-            <h3>Update Post:</h3>
+            <h3>Post Form:</h3>
         </div>
     </div>>
     <div class="row">
@@ -18,7 +18,7 @@
                 {% csrf_token %}
                 {{ form | crispy }}
                 <br>
-                <button type="submit" class="btn btn-signup btn-lg m-1">Update</button>
+                <button type="submit" class="btn btn-signup btn-lg m-1">Submit</button>
                 <a href="{{ request.META.HTTP_REFERER }}" class="btn btn-sec btn-lg m-1">Cancel</a>
             </form>
         </div>
