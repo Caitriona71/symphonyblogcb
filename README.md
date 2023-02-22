@@ -135,13 +135,13 @@ The W3C Markup Validator, W3C CSS Validator Services, JS Hint and PEP8 were used
 ### Home Page
 |Test                               |Test Performed                 |Expected Result                |Result|
 |-----------------------------------|-------------------------------|-------------------------------|------
-| Navbar Register                   | Click Link                    | Redirects the user to the Sign| Up page   
-| Navbar Login                      | Click Link                    | Takes the user to the Sign In |page   
-| Navbar Logout                     | Click Link                    | Redirects the user to the Sign| Out page  
-| Navbar small/medium screens       | Click hamburger icon          | Login, Sign Up, Logout and Abo|ut Us can be clicked and work the same as on large screens
-| Navbar Logout                     | Click Link                    | Redirects the user to the Sign|Out page
+| Navbar Register                   | Click Link                    | Redirects the user to the Sign Up page|Pass   
+| Navbar Login                      | Click Link                    | Takes the user to the Sign In page|Pass   
+| Navbar Login                      | Click Link                    | Takes the user to the Sign In page|Pass   
+| Navbar Logout                     | Click Link                    | Redirects the user to the Sign Out page|Pass
+| Navbar small/medium screens       | Click hamburger icon          | Login, Sign Up, Logout and About Us can be clicked and work the same as on large screens|Pass
 ### Sign Up Page/Form
-| Log In                            | Click Link                    | Redirects the user to the Sign|In page    Fail 
+| Log In                            | Click Link                    | Redirects the user to the Sign In page|Fail 
 
 
 
