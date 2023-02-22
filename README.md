@@ -141,7 +141,10 @@ The W3C Markup Validator, W3C CSS Validator Services, JS Hint and PEP8 were used
 | Navbar Logout                     | Click Link                    | Redirects the user to the Sign Out page|Pass
 | Navbar small/medium screens       | Click hamburger icon          | Login, Sign Up, Logout and About Us can be clicked and work the same as on large screens|Pass
 ### Sign Up Page/Form
-| Log In                            | Click Link                    | Redirects the user to the Sign In page|Fail 
+|Test                               |Test Performed                 |Expected Result                |Result|
+|-----------------------------------|-------------------------------|-------------------------------|------
+| Log In                            | Click Link                    | Redirects the user to the Sign Up page|
+| Sign Up Form Works                | Enter Username and Passworde  | The Django registration form is validating automatically if the username is valid and if the passwords match and are valid. Otherwise an error message is shown.|Pass
 
 
 
