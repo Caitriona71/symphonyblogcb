@@ -144,3 +144,4 @@ class AddPost(LoginRequiredMixin, SuccessMessageMixin,
 
     def test_func(self):
         return self.request.user.is_staff
+

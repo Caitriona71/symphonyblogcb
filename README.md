@@ -54,7 +54,9 @@ The database is a PostgreSQL database, hosted on [ElephantSQL](https:www.elephan
 
 ### Models
 
-- [Database models](./readme-docs/database-models/posts-model.png)
+[Post Database Model](./readme-docs/database-models/posts-model.png)<br>
+[Comments Database Model](./readme-docs/database-models/comments-model.png)<br>
+[Contributors Database Model](./readme-docs/database-models/contributors-model.png)
 
 
 ## Technologies
