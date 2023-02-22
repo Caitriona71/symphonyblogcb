@@ -1,11 +1,13 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.views.generic import ListView
+from django.views.generic.base import TemplateView
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
-from .models import Post, Comment
+from .models import Post, Comment, Contributor
 from .forms import CommentForm, PostForm
 
 
@@ -88,9 +90,6 @@ class PostLike(LoginRequiredMixin, View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-# Create a post with a post form view with
-# success message feedback
-
 # Update a post on post detail page view with
 # success message feedback
 class UpdatePost(LoginRequiredMixin, SuccessMessageMixin,
@@ -129,6 +128,7 @@ class PostDelete(LoginRequiredMixin, SuccessMessageMixin,
             return True
         return False
 
+
 # Create a post with a post form view with
 # success message feedback
 class AddPost(LoginRequiredMixin, SuccessMessageMixin,
@@ -145,3 +145,13 @@ class AddPost(LoginRequiredMixin, SuccessMessageMixin,
     def test_func(self):
         return self.request.user.is_staff
 
+
+
+
+class ContributorList(generic.ListView):
+    model = Contributor
+    context_object_name = 'contributor_list'
+    queryset = Contributor.objects.filter(status=1).order_by('name')
+    template_name = 'aboutus.html'
+    paginate_by = 6
+    success_message = 'Contributor Created'

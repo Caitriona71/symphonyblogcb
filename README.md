@@ -109,7 +109,7 @@ The database is a PostgreSQL database, hosted on [ElephantSQL](https:www.elephan
 [Cloudinary](https://cloudinary.com/) was used for images and static files.
 
 ### ElephantSQL
-[ElephantSQL](https:www.elephantsql.com/) to host the database. ElephantSQL is a cloud-based PostgreSQL database hosting service.
+[ElephantSQL](https://elephantsql.com/) to host the database. ElephantSQL is a cloud-based PostgreSQL database hosting service.
 
 ## Frameworks, Libraries and Tools Used
 
@@ -133,8 +133,12 @@ The W3C Markup Validator, W3C CSS Validator Services, JS Hint and PEP8 were used
 ## Manual Testing
 
 ### Home Page
-ǀTestǀ                 ǀTestǀ                               ǀTestǀ                  ǀResultǀ
-ǀ------------------------------ǀ------------------------------ǀ----------------------------------------ǀ------------------ǀ
+|Tested                             |Test Performed                 |Expected Result                |Result|
+|-----------------------------------|-------------------------------|-------------------------------|------
+| Navbar Register                   | Click Link                    | Redirects the user to the Sign Up page   
+| Navbar Login                      | Click Link                    | Takes the user to the Sign In page   
+| Navbar Logout                     | Click Link                    | Redirects the user to the Sign Out page  
+| Navbar small/medium screens       | Click hamburger icon          | Login, Sign Up, Logout and About Us can be clicked and work the same as on large screens  
 
 
 

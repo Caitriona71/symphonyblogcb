@@ -4,12 +4,14 @@ from cloudinary.models import CloudinaryField
 from django.urls import reverse
 from django.template.defaultfilters import slugify
 
+STATUS = ((0, "Draft"), (1, "Published"))
+
+
 class Contributor(models.Model):
     name = models.CharField(max_length=80)
     photo = CloudinaryField('image')
     bio = models.TextField(blank=False)
-
-STATUS = ((0, "Draft"), (1, "Published"))
+    status = models.IntegerField(choices=STATUS, default=0)
 
 
 # Model for blog posts
