@@ -143,18 +143,25 @@ The W3C Markup Validator, W3C CSS Validator Services, JS Hint and PEP8 were used
 ### Sign Up Page/Form
 |Test                               |Test Performed                 |Expected Result                |Result|
 |-----------------------------------|-------------------------------|-------------------------------|------
-| Log In Link                       | Click Link                    | Redirects the user to the Sign In page|
-| Sign Up Form Works                | Enter Username and Password   | The Django registration form is validating automatically if the username is valid and if the passwords match and are valid. The user is redirected to the home page. Otherwise an error message is shown.|Pass
-| Log In Link                       | Click Link                    | Redirects the user to the Home page with green "Successfully signed in as (Username entered on previous screen)" alert message|Pass|
+| Log In Link                       | Click Link                    | Redirects the user to the Sign In page|Pass
+| Sign Up Form Works                | Enter Username and Password   | The Django registration form is validating automatically if the username is valid and if the passwords match and are valid. Otherwise an error message is shown. The user is then redirected to the home page and a green alert message "Successfully signed in as <i>(username entered on previous page)</i>" is displayed. |Pass
 | Navbar Logout                     | Click Link                    | Redirects the user to the Sign Out page|Pass
 ### Sign Out Page
 |Test                               |Test Performed                 |Expected Result                |Result|
 |-----------------------------------|-------------------------------|-------------------------------|------
 | Sign Out Button                   | Click Button                  | Redirects the user to the Home page and displays green "You have signed out" alert message|Pass
+
 ### Sign In Page
 |Test                               |Test Performed                 |Expected Result                |Result|
-|-----------------------------------|-------------------------------|-------------------------------|------ Sign Up Link                        | Click Link                    | Redirects the user to the Sign Up page|Pass
-| Sign In Form Works                | Enter Username and Password   | The Django registration form is validating automatically if the username is valid and if the passwords match and are valid. The user is redirected to the Home page. A green "Successfully signed in as (username entered on previous screen. Otherwise an error message is shown.|Pass
+|-----------------------------------|-------------------------------|-------------------------------|------
+| Sign Up Link                      | Click Link                    | Redirects the user to the Sign Up page|Pass
+| Sign In Form Works                | Enter Username and Password   | The Django registration form is validating automatically if the username is valid and if the passwords match and are valid. The user is redirected to the home page. Otherwise an error message is shown.|Pass
+| Log In Link                       | Click Link                    | Redirects the user to the Home page with green "Successfully signed in as <i>(username entered on previous screen)</i>" alert message|Pass|
+| Navbar Logout                     | Click Link                    | Redirects the user to the Sign Out page|Pass
+### Sign In Page
+|Test                               |Test Performed                 |Expected Result                |Result|
+|-----------------------------------|-------------------------------|-------------------------------|------| Sign Up Link                        | Click Link                    | Redirects the user to the Sign Up page|Pass
+| Sign In Form Works                | Enter Username and Password   | The Django registration form is validating automatically if the username is valid and if the passwords match and are valid. Otherwise an error message is shown. The user is redirected to the Home page. A green "Successfully signed in as <i>(username entered on previous page)</i> is displayed". |Pass
 
 
 
