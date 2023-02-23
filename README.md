@@ -158,10 +158,6 @@ The W3C Markup Validator, W3C CSS Validator Services, JS Hint and PEP8 were used
 | Sign In Form Works                | Enter Username and Password   | The Django registration form is validating automatically if the username is valid and if the passwords match and are valid. The user is redirected to the home page. Otherwise an error message is shown.|Pass
 | Log In Link                       | Click Link                    | Redirects the user to the Home page with green "Successfully signed in as <i>(username entered on previous screen)</i>" alert message|Pass|
 | Navbar Logout                     | Click Link                    | Redirects the user to the Sign Out page|Pass
-### Sign In Page
-|Test                               |Test Performed                 |Expected Result                |Result|
-|-----------------------------------|-------------------------------|-------------------------------|------| Sign Up Link                        | Click Link                    | Redirects the user to the Sign Up page|Pass
-| Sign In Form Works                | Enter Username and Password   | The Django registration form is validating automatically if the username is valid and if the passwords match and are valid. Otherwise an error message is shown. The user is redirected to the Home page. A green "Successfully signed in as <i>(username entered on previous page)</i> is displayed". |Pass
 
 
 
