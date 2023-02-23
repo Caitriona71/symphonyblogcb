@@ -1,3 +1,4 @@
+
 <!-- Heading -->
 
 # Symphony ![View the live site here](https://)
@@ -132,6 +133,15 @@ The W3C Markup Validator, W3C CSS Validator Services, JS Hint and PEP8 were used
 
 ## Manual Testing
 
+<table width="100%">
+  <tr>
+  <td width="20%">Test</td>
+  <td width="40%">Test 2</td>
+  <td width="25%">Test 3</td>
+  <td width="15%">Test 4</td>
+  </tr>
+</table>
+
 ### Home Page
 |Test                               |Test Performed                 |Expected Result                |Result|
 |-----------------------------------|-------------------------------|-------------------------------|------
@@ -139,13 +149,14 @@ The W3C Markup Validator, W3C CSS Validator Services, JS Hint and PEP8 were used
 | Navbar Login                      | Click Link                    | Takes the user to the Sign In page|Pass   
 | Navbar small/medium screens       | Click hamburger icon          | Login, Sign Up, Logout and About Us can be clicked and work the same as on large screens|Pass
 | Navbar About Us                   | Click Link                    | Takes the user to the About Us page|Pass
+| Blog Post                         | Click Link                    | Redirects the user to the Blog Post content page|Pass  
 
 ### Sign Up Page/Form
-|Test                                  |Test Performed                 |Expected Result                |Result|
-|--------------------------------------|-------------------------------|-------------------------------|------
-| Log In Link                          | Click Link                    | Redirects the user to the Sign In page|Pass
-| Sign Up Form Works                   | Enter Username and Password   | The Django registration form is validating automatically if the username is valid and if the passwords match and are valid. Otherwise an error message is shown. The user is then redirected to the home page and a green alert message "Successfully signed in as <i>(username entered on previous page)</i>" is displayed. |Pass
-| Navbar Logout                        | Click Link                   | Redirects the user to the Sign Out page|Pass
+|Test                                |Test Performed                 |Expected Result                |Result|
+|------------------------------------|-------------------------------|-------------------------------|------
+| Log In Link                        | Click Link                    | Redirects the user to the Sign In page|Pass
+| Sign Up Form Works                 | Enter Username and Password   | The Django registration form is validating automatically if the username is valid and if the passwords match and are valid. Otherwise an error message is shown. The user is then redirected to the home page and a green alert message "Successfully signed in as <i>(username entered on previous page)</i>" is displayed. |Pass
+| Navbar Logout                      | Click Link                   | Redirects the user to the Sign Out page|Pass
 ### Sign Out Page
 |Test                               |Test Performed                 |Expected Result                |Result|
 |-----------------------------------|-------------------------------|-------------------------------|------
@@ -158,7 +169,10 @@ The W3C Markup Validator, W3C CSS Validator Services, JS Hint and PEP8 were used
 | Sign In Form Works                | Enter Username and Password   | The Django registration form is validating automatically if the username is valid and if the passwords match and are valid. The user is redirected to the home page. Otherwise an error message is shown.|Pass
 | Log In Link                       | Click Link                    | Redirects the user to the Home page with green "Successfully signed in as <i>(username entered on previous screen)</i>" alert message|Pass|
 | Navbar Logout                     | Click Link                    | Redirects the user to the Sign Out page|Pass
-
+### Blog Post Detail Page
+|Test                               |Test Performed                 |Expected Result                |Result|
+|-----------------------------------|-------------------------------|-------------------------------|------
+| Like Post                         | Click on Heart Link           | Heart Icon changes to solid red|Pass
 
 
 
