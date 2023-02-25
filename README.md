@@ -132,12 +132,33 @@ The W3C Markup Validator, W3C CSS Validator Services, JS Hint and PEP8 were used
 [JSHint](https://jshint.com/)
 
 ## Manual Testing
-[Home Page](./readme-docs/home-page-testing.png)<br>
-[Post Detail Page](./readme-docs/blog-post-detail-page-testing)<br>
-[Sign Up Page](./readme-docs/sign-up-page-form.png)<br>
-[Sign In Page](./readme-docs/sign-in-page-form.png)<br>
-[Sign Out Page](./readme-docs/sign-out-page.png)<br>
-[Blog Post Detail Page Admin Staff](./readme-docs/blog-post-detail-page-admin-contrib.png)<br>
+
+### Testing Tables
+[Home Page](./readme-docs/manual-testing/home-page-testing.png)<br>
+[Post Detail Page](./readme-docs/manual-testing/blog-post-detail-page-testing.png)<br>
+[Post Detail Page Admin Access](./readme-docs/manual-testing/blog-post-detail-page-admin-contrib.png)<br>
+[Admin Page Approve/Delete Comments](./readme-docs/manual-testing/approve-and-delete-comments-test.png)<br>
+[Sign Up Page](./readme-docs/manual-testing/sign-up-page-form.png)<br>
+[Sign In Page](./readme-docs/manual-testing/sign-in-page-form.png)<br>
+[Sign Out Page](./readme-docs/manual-testing/sign-out-page.png)<br>
+[Blog Post Detail Page Admin Staff](./readme-docs/manual-testing/blog-post-detail-page-admin-contrib.png)<br>
+[Admin Page Delete Contributor](./readme-docs/manual-testing/admin-page-select-contrib-to-delete.png)
+### Post Detail Admin Page
+[Post Detail Page Admin Change Post](./readme-docs/manual-testing/change-post-screen.png)<br>
+### Delete Post
+[Post Detail Admin Delete Post](./readme-docs/manual-testing/admin-page-delete-selected-post.png)<br>
+[Post Detail Admin Delete Post 2](./readme-docs/manual-testing/are-you-sure-you-want-to-delete.png)<br>
+[Post Detail Admin Delete Post 3](./readme-docs/manual-testing/successfully-deleted-1-post.png)<br>
+### Delete Comment
+[Admin Page Delete Comment](./readme-docs/manual-testing/delete-comment-admin-screen.png)<br>
+[Admin Page Change Comment](./readme-docs/manual-testing/select-comment-to-change.png)<br>
+[Admin Page Delete Comment2](./readme-docs/manual-testing/delete-selected-comments.png)<br>
+[Admin Page Delete Comment3](./readme-docs/manual-testing/successfully-deleted-1-comment.png)<br>
+### Delete Contributor
+[Admin Page Change Contributor](./readme-docs/manual-testing/select-contributor-to-change.png)<br>
+[Admin Page Delete Contributor 1](./readme-docs/manual-testing/delete-contrib-are-you-sure.png)<br>
+[Admin Page Delete Contributor 2](./readme-docs/manual-testing/successfully-delete-1-contributor.png)<br>
+
 []
 
 
