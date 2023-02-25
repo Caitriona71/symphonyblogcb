@@ -132,6 +132,7 @@ The W3C Markup Validator, W3C CSS Validator Services, JS Hint and PEP8 were used
 [JSHint](https://jshint.com/)
 
 ## Manual Testing
+[HomePage](./readme-docs/home-page-testing.png)
 
 <table width="100%">
   <tr>
