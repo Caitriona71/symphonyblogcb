@@ -5,7 +5,7 @@ from django.contrib import admin
 
 # URL patterns for blog app
 urlpatterns = [
-    path('aboutus/', views.ContributorList.as_view(), name='aboutus'),
+    path('aboutus/', views.AboutUs.as_view(), name='aboutus'),
     path('', views.PostList.as_view(), name='home'),
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
     path('like/<slug:slug>', views.PostLike.as_view(), name='post_like'),

@@ -167,6 +167,16 @@ h4  {
     border: none;
 }
 
+.contributor-photo {
+    width: 140px;
+    height: 140px;
+}
+
+.row {
+    margin-left: 10px;
+    
+}
+
 .footer {
     background-color: #1a1a1a;   
 }

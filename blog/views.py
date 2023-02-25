@@ -148,10 +148,8 @@ class AddPost(LoginRequiredMixin, SuccessMessageMixin,
 
 
 
-class ContributorList(generic.ListView):
+class AboutUs(generic.ListView):
     model = Contributor
     context_object_name = 'contributor_list'
-    queryset = Contributor.objects.filter(status=1).order_by('name')
+    queryset = Contributor.objects.all().order_by('name')
     template_name = 'aboutus.html'
-    paginate_by = 6
-    success_message = 'Contributor Created'

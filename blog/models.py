@@ -11,7 +11,6 @@ class Contributor(models.Model):
     name = models.CharField(max_length=80)
     photo = CloudinaryField('image')
     bio = models.TextField(blank=False)
-    status = models.IntegerField(choices=STATUS, default=0)
 
 
 # Model for blog posts
