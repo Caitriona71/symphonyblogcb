@@ -23,7 +23,6 @@ class PostList(generic.ListView):
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
-        
         # queryset = Post.objects.filter(status=1)
         queryset = Post.objects.all()
         post = get_object_or_404(queryset, slug=slug)
@@ -144,8 +143,6 @@ class AddPost(LoginRequiredMixin, SuccessMessageMixin,
 
     def test_func(self):
         return self.request.user.is_staff
-
-
 
 
 class AboutUs(generic.ListView):

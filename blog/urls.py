@@ -12,5 +12,4 @@ urlpatterns = [
     path('create/post', views.AddPost.as_view(), name='post_form'),
     path('<slug:slug>/update/', views.UpdatePost.as_view(), name='update_post'),
     path('<slug:slug>/delete/', views.PostDelete.as_view(), name='post_delete'),
-    
 ]
