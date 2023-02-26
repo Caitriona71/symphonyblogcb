@@ -2,15 +2,53 @@ body {
     background-color: #fff;
 }
 
-h2, 
-h4  {
-    font-family: Gentium Book Plus, serif;
-}
-
 .brand {
     font-family: Mea Culpa, sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
+    color: #1a1a1a;
+}
+
+.btn-del {
+    background-color:#1a1a1a;
+    color:#F9FAFC;
+}
+
+.btn-del:hover {
+    background-color: #F9FAFC;
+    color:#1a1a1a;
+}
+.btn-like {
+    color: #E84610;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #E84610;
+    background: transparent;
+    border: none;
+}
+
+.btn-sec {
+    background-color: #1a1a1a;
+    color: #F9FAFC;
+}
+
+.btn-sec:hover {
+    background-color: #F9FAFC;
+    color:#1a1a1a;
+}
+
+.btn-signup {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
     color: #1a1a1a;
 }
 
@@ -30,22 +68,39 @@ h4  {
     background-color: #F9FAFC;
 }
 
-.navbar {
-    background-color: #1a1a1a;
-    font-family: Roboto Slab, serif;
-}
-
-.navbar-brand {
-    color:#F9FAFC;
-}
 
 .card {
     border: none;
     background-color: transparent;
 }
 
+.contributor-photo {
+    width: 140px;
+    height: 140px;
+}
+
+.footer {
+    background-color: #1a1a1a;   
+}
+
+h2, 
+h4  {
+    font-family: Gentium Book Plus, serif;
+}
+
 .image-container {
     position: relative;
+}
+
+.link {
+    color: #23BBBB;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
 }
 
 .masthead {
@@ -82,6 +137,15 @@ h4  {
     z-index: 100;
 }
 
+.navbar {
+    background-color: #1a1a1a;
+    font-family: Roboto Slab, serif;
+}
+
+.navbar-brand {
+    color:#F9FAFC;
+}
+
 .post-link {
     text-decoration: none;
     color: #1a1a1a;
@@ -101,61 +165,6 @@ h4  {
     color: lightgray;
 }
 
-.btn-signup {
-    background-color: #1a1a1a;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #1a1a1a;
-}
-
-.link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
-}
-
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
-}
-
-.btn-del {
-    background-color:#1a1a1a;
-    color:#F9FAFC;
-}
-
-.btn-del:hover {
-    background-color: #F9FAFC;
-    color:#1a1a1a;
-}
-
-.btn-sec {
-    background-color: #1a1a1a;
-    color: #F9FAFC;
-}
-
-.btn-sec:hover {
-    background-color: #F9FAFC;
-    color:#1a1a1a;
-}
-
 .page-link {
     background-color: #1a1a1a;
     color: #F9FAFC;
@@ -167,16 +176,6 @@ h4  {
     border: none;
 }
 
-.contributor-photo {
-    width: 140px;
-    height: 140px;
-}
-
 .row {
-    margin-left: 10px;
-    
-}
-
-.footer {
-    background-color: #1a1a1a;   
+    margin-left: 10px;    
 }

@@ -444,6 +444,24 @@ ALLOWED_HOSTS = ['your_app_name.herokuapp.com', 'localhost']
 
 **6.** Click "View App" when the build is done.
 
+## **Content**
+### **Blog Posts**
+- Report: Music in the Metaverse - ludwig-van.com
+- Chopin - classicfm.com
+- McDonald's restaurant in Wales to play Beethoven to tackle late night anti-social behaviour - classicfm.com
+- Report: Could Music Therapy Help in tte Fight Against the Effects of Covid19 - ludwig-van.com
+- 2023 Oscar Nominees announced for Original Score - classical-music.com
+- New Study: Playing the Piano Boosts Brain Processing Power - pianostreet.com
+### **Images**
+- Default Orchestra image - Pixabay
+- Oscars Image - rd.com
+- Orchestra Image - ludwig-van.com
+- Beethoven McDonald's Image - classicfm.com
+- Girl playing the piano - commons.wikimedia.org
+- Woman wearing VR Headset - Pixabay
+
+
+
 ## **Credits**
 - My mentor for his continued guidance, help, feedback and support
 - The friendly and helpful tutor support team at Code Institute
