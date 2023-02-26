@@ -154,6 +154,10 @@ The following python files were checked using [pep8CI](https://pep8ci.herokuapp.
 The Javascript file was checked using [JSHint](https://jshint.com/)
 - No errors were found.
 
+## **Code Formatting**
+HTML formatted using [HTML Formatter](https://webformatter.com)<br>
+
+
 ## **Manual Testing**
 
 ### **Testing Tables**

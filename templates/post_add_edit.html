@@ -1,29 +1,23 @@
-{% extends 'base.html' %}
-
-{% load cloudinary %}
-
-{% load crispy_forms_tags %}
-
-{% block content %}
+{% extends 'base.html' %} {% load cloudinary %} {% load crispy_forms_tags %} {% block content %}
 
 <div class="container">
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
             <h3>Post Form:</h3>
         </div>
-    </div>>
+    </div>
+    >
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
             <form method="POST" enctype="multipart/form-data">
-                {% csrf_token %}
-                {{ form | crispy }}
-                <br>
+                {% csrf_token %} {{ form | crispy }}
+                <br />
                 <button type="submit" class="btn btn-signup btn-lg m-1">Submit</button>
                 <a href="{{ request.META.HTTP_REFERER }}" class="btn btn-sec btn-lg m-1">Cancel</a>
             </form>
         </div>
     </div>
-    <br>
+    <br />
 </div>
 
 {% endblock %}

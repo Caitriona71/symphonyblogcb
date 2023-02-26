@@ -2,125 +2,115 @@
 
 <!DOCTYPE html>
 <html class="h-100">
+    <head>
+        <!-- TITLE -->
+        <title>Symphony Blog</title>
+        <!-- META -->
+        <meta name="description" content="This is a classical music blog where you will find in-depth articles about all kinds of classical music related topics." />
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Roboto+Slab&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    </head>
 
+    <body class="d-flex flex-column h-100 main-bg">
+        <!-- Navigation -->
 
-<head>
-     <!-- TITLE -->
-    <title>Symphony Blog</title>
-    <!-- META -->
-    <meta name="description"
-        content="This is a classical music blog where you will find in-depth articles about all kinds of classical music related topics.">
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-</head>
-
-<body class="d-flex flex-column h-100 main-bg">
-
-    <!-- Navigation -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-            <!-- Brand -->
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">Symphony</span></a>
-            <!-- Toggle button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- Home link -->
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-                    </li>
-                    {% if user.is_staff %}
-                    <!-- Create Post link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'post_form' %}">Create Post</a>
-                    </li>
-                    {% endif %}
-                    {% if user.is_authenticated %}
-                    <!-- Logout link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-                    </li>
-                    {% else %}
-                     <!-- Sign Up link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
-                    </li>
-                    <!-- Login link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
-                    </li>
-                    {% endif %}
-                    <!-- About link -->
-                    <li class="nav-item">
-                        <a class="nav-link link-secondary" href="{% url 'aboutus' %}">About Us</a>
-                    </li>
-                </ul>
-                <span class="navbar-text text-muted">
-                    Welcome to the world of classical music
-                </span>
-            </div>
-        </div>
-    </nav>
-    <!-- Navigation end -->
-
-    <!-- Display alert messages at the top of the page -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                {% for message in messages %}
-                <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
-                    {{ message | safe }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+                <!-- Brand -->
+                <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">Symphony</span></a>
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Home link -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                        </li>
+                        {% if user.is_staff %}
+                        <!-- Create Post link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'post_form' %}">Create Post</a>
+                        </li>
+                        {% endif %} {% if user.is_authenticated %}
+                        <!-- Logout link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                        </li>
+                        {% else %}
+                        <!-- Sign Up link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                        </li>
+                        <!-- Login link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                        </li>
+                        {% endif %}
+                        <!-- About link -->
+                        <li class="nav-item">
+                            <a class="nav-link link-secondary" href="{% url 'aboutus' %}">About Us</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text text-muted">
+                        Welcome to the world of classical music
+                    </span>
                 </div>
-                {% endfor %}
+            </div>
+        </nav>
+        <!-- Navigation end -->
+
+        <!-- Display alert messages at the top of the page -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    {% for message in messages %}
+                    <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+                        {{ message | safe }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Alert message End -->
+        <!-- Alert message End -->
 
+        <main class="flex-shrink-0 main-bg">
+            {% block content %}
+            <!-- Content Goes here -->
+            {% endblock content %}
+        </main>
 
-    <main class="flex-shrink-0 main-bg">
-        {% block content %}
-        <!-- Content Goes here -->
-        {% endblock content %}
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg">
-        <!-- Copyright -->
+        <!-- Footer -->
+        <footer class="footer mt-auto py-3 dark-bg">
+            <!-- Copyright -->
             <p class="m-0 text-center text-white small">Copyright &copy; Symphony Blog</p>
-        <!-- Social media section --> 
-            <p class="m-0 text-center text-white">Follow us: <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square ms-3"></i></a>
-            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter-square ms-3"></i></a>
-            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram-square ms-3"></a></i>
-            <a href="https://www.youtube.com" target="_blank" aria-label="Youtube"><i class="fa-youtube-square ms-3"></i></a>
-                        
-    </footer>
-    <script>
-        setTimeout(function () {
-            let messages = document.getElementById('msg');
-            let alert = new bootstrap.Alert(messages);
-            alert.close();
-        }, 2500);
-    </script>
-</body>
+            <!-- Social media section -->
+            <p class="m-0 text-center text-white">
+                Follow us: <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square ms-3"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter-square ms-3"></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram-square ms-3"></i></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="Youtube"><i class="fa-youtube-square ms-3"></i></a>
+            </p>
+        </footer>
 
+        <script>
+            setTimeout(function () {
+                let messages = document.getElementById("msg");
+                let alert = new bootstrap.Alert(messages);
+                alert.close();
+            }, 2500);
+        </script>
+    </body>
 </html>

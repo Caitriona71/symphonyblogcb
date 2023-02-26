@@ -1,5 +1,4 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 
 <div class="container-fluid">
     <div class="row">
@@ -9,17 +8,20 @@
         <div class="col-12 mt-3 left">
             <div class="row">
                 <!-- Display a card for each post in the post_list -->
-            {% for post in post_list %}
+                {% for post in post_list %}
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
                             <!-- Display the post's featured image -->
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top"
-                                    src="https://res.cloudinary.com/dknrw7o4k/image/upload/v1676659076/gffb2e097174332d8b43835ed74ae5800008005cce87b0e1dc9dbc9fd286a032852e03329a4a1562b93516e1b6ae4cb6580f9f36d877c3df16ad8a3fc41bfca42daa40db74f3d6ecf9e5d4d653992a756_640_w4hg4t.jpg" alt="violinists in symphony orchestra">
+                                <img
+                                    class="card-img-top"
+                                    src="https://res.cloudinary.com/dknrw7o4k/image/upload/v1676659076/gffb2e097174332d8b43835ed74ae5800008005cce87b0e1dc9dbc9fd286a032852e03329a4a1562b93516e1b6ae4cb6580f9f36d877c3df16ad8a3fc41bfca42daa40db74f3d6ecf9e5d4d653992a756_640_w4hg4t.jpg"
+                                    alt="violinists in symphony orchestra"
+                                />
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}" />
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
@@ -32,20 +34,17 @@
                                 <!-- Display the post's excerpt -->
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
-                             <!-- Display the post's creation date, and number of likes -->
+                            <!-- Display the post's creation date, and number of likes -->
                             <hr />
-                            <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
-                                {{ post.number_of_likes }}</p>
+                            <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i> {{ post.number_of_likes }}</p>
                         </div>
                     </div>
                 </div>
-                 <!-- Insert a new row after every three posts -->
+                <!-- Insert a new row after every three posts -->
                 {% if forloop.counter|divisibleby:3 %}
             </div>
             <div class="row">
-                {% endif %}
-                {% endfor %}
-
+                {% endif %} {% endfor %}
             </div>
         </div>
         <!-- Blog entries column ends here -->
