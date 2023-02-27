@@ -1,7 +1,7 @@
 from . import views
 from django.urls import path
 from django.contrib import admin
-# from blog.views import AboutUs  --- commented this out as it's gone from view
+
 
 # URL patterns for blog app
 urlpatterns = [

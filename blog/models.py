@@ -7,6 +7,7 @@ from django.template.defaultfilters import slugify
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
+# Model for Contributors
 class Contributor(models.Model):
     name = models.CharField(max_length=80)
     photo = CloudinaryField('image')

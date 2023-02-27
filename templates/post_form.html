@@ -3,6 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
+            <!-- Title for post form -->
             <h3>Create a Post:</h3>
         </div>
     </div>
@@ -12,6 +13,7 @@
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %} {{ form | crispy }}
                 <br />
+                <!-- Submit button for created post -->
                 <button type="submit" class="btn btn-signup btn-lg m-1">Submit</button>
                 <a href="{{ request.META.HTTP_REFERER }}" class="btn btn-sec btn-lg m-1">Cancel</a>
             </form>

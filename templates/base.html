@@ -58,7 +58,7 @@
                             <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                         </li>
                         {% endif %}
-                        <!-- About link -->
+                        <!-- About Us link -->
                         <li class="nav-item">
                             <a class="nav-link link-secondary" href="{% url 'aboutus' %}">About Us</a>
                         </li>
@@ -88,7 +88,7 @@
 
         <main class="flex-shrink-0 main-bg">
             {% block content %}
-            <!-- Content Goes here -->
+            <!-- Content -->
             {% endblock content %}
         </main>
 
@@ -104,7 +104,10 @@
                 <a href="https://www.youtube.com" target="_blank" aria-label="Youtube"><i class="fa-youtube-square ms-3"></i></a>
             </p>
         </footer>
+        <!-- Footer end -->
 
+        <!-- Javascript-->
+        <!-- Timeout for message alerts -->
         <script>
             setTimeout(function () {
                 let messages = document.getElementById("msg");
