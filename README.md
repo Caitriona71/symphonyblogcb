@@ -200,17 +200,30 @@ HTML formatted using [HTML Formatter](https://webformatter.com)<br><br>
 
 To ensure the application is working and the functions are operating as expected, manual testing was also performed on user stories to verify that acceptance criteria was met.
 
-**1.** As a **site user** I can set up an account so that I can comment on and like posts.
+
+**1.** As **project creator** I need to create the base setup of the application so that other features can be added.
 
 _Acceptance Criteria_
-- To register, a user must enter a username and password (email is optional)
-- User should not be able to register the same username more than once
+- The project creator must be able to install django and it frameworks and libraries to set up the app
+- THe project creator should be able to create an external database with ElephantSQL
+- The project creator should be able to deploy the project to Heroku
 
 _Test Performed_
-- Username and password is required and that email is optional
-- Registering with a username that has already been created returns a message "A user with that username already exists"<br><br>
+- Followed steps in Code Institute Django Instruction Sheet
+- When all steps completed correctly the screen "The Install Worked Successfully! Congratulations!" displayed<br><br>
 
-**2.** As **site admin** I can create, read, update and delete particular posts, so that I can manage the content of the blog.
+**2.** As **site admin** I can create draft posts so that I can work on them and complete the content.
+
+_Acceptance Criteria_
+- Site admin can log in to the /admin URL with a superuser account
+- Site admin can create draft posts and save them for publishing later in the admin panel
+
+_Test Performed_
+- Logged in to the /admin URL with the superuser account
+- Can create draft posts and save them so that they can be published later<br><br>
+
+
+**3.** As **site admin** I can create, read, update and delete particular posts, so that I can manage the content of the blog.
 
 _Acceptance Criteria_
 - Site admin can log in to the /admin URL with a superuser account
@@ -221,17 +234,37 @@ _Test Performed_
 - Logged in to the /admin URL with the superuser account
 - Can create, update and delete posts and comments with the superuser account<br><br>
 
-**3.** As **site admin** I can create draft posts so that I can work on them and complete the content.
+
+**4.** As **site admin** I can approve comments, so that I can decide if a comment is suitable or unsuitable for viewing.
 
 _Acceptance Criteria_
 - Site admin can log in to the /admin URL with a superuser account
-- Site admin can create draft posts and save them for publishing later in the admin panel
+- Site admin can approve comments so they can be published under the blog posts
+- Site admin can delete a comment if it is deemed unsuitable for publishing
 
 _Test Performed_
 - Logged in to the /admin URL with the superuser account
-- Can create draft posts and save them so that they can be published later<br><br>
+- Can click on comments and select ones that are awaiting approval and approve them
+- Can delete unsuitable comments using the superuser account<br><br>
 
-**4.** As a **site user** I can view a list of blog posts so that I can choose which one I want to read.
+**5.** As a **site admin** I can configure the Administration page so that the view of this area of the blog is customized.
+
+_This user story was a **"Could Have"** and time constraints didn't allow for it to be developed_<br><br>
+
+**6.** As a **site admin** I can create, read, update and delete posts from the front end of the blog site, so that I can do this quickly without having to access the administration page.
+
+_Acceptance Criteria_
+- Site admin can log in on the blog site like other registered users
+- Site admin can click on the "create post" link and create a new post and save it
+- Site admin can click on "update post" to edit the post directly on the blog site
+- Site admin can click on "delete post" to delete a post on the blog site without accessing the administration page
+
+_Test Performed_
+- Logged in to the blog site the same as other registered users
+- Can click on "Create Post" link and create a new post and save it
+- Can click on "Update Post" and "Delete Post" buttons to edit or delete the post<br><br>
+
+**7.** As a **site user** I can view a list of blog posts so that I can choose which one I want to read.
 
 _Acceptance Criteria_
 - All posts are listed on the blog page
@@ -245,7 +278,7 @@ _Test Performed_
 - The correct information is presented to the user for each blog post.
 - Posts are sorted by date created and that any new blog posts are automatically added to the blog list.<br><br>
 
-**5.** As a **site user** I can select a post to view its full content.
+**8.** As a **site user** I can select a post to view its full content.
 
 _Acceptance Criteria_
 - Author, image, title, date created and blog content is displayed on screen
@@ -255,7 +288,7 @@ _Test Performed_
 - All posts on the blog and home page can be clicked and opened for full detail view
 - The correct information is displayed to the user for each blog post<br><br>
 
-**6.** As a **site user** I can view the comments on a particular post so that I can see the discussion about that post.
+**9.** As a **site user** I can view the comments on a particular post so that I can see the discussion about that post.
 
 _Acceptance Criteria_
 - All comments should be displayed when viewing a post
@@ -265,43 +298,17 @@ _Test Performed_
 - All users can view the comments section on the Post Detail page and all comments are displayed correctly
 - Comments are sorted by date created<br><br>
 
-**7.** As a **registered user** I can add comments on a post so that I can join in the conversation.
+**10.** As a **site user** I can set up an account so that I can comment on and like posts.
 
 _Acceptance Criteria_
-- Registered and logged in users can leave comments on a post
-- The name and date should be displayed with the comment
+- To register, a user must enter a username and password (email is optional)
+- User should not be able to register the same username more than once
 
 _Test Performed_
-- Logged in users are presented with the comment form on the Post Detail page
-- The comment form and submit button functions as expected, and when adding a new comment, it creates a green alert "Your comment is awaiting approval" message
-- The comment functionality is only available to signed in users<br><br>
+- Username and password is required and that email is optional
+- Registering with a username that has already been created returns a message "A user with that username already exists"<br><br>
 
-**8.** As **site admin** I can approve comments, so that I can decide if a comment is suitable or unsuitable for viewing.
-
-_Acceptance Criteria_
-- Site admin can log in to the /admin URL with a superuser account
-- Site admin can approve comments so they can be published under the blog posts
-- Site admin can delete a comment if it is deemed unsuitable for publishing
-
-_Test Performed_
-- Logged in to the /admin URL with the superuser account
-- Can click on comments and select ones that are awaiting approval and approve them
-- Can delete unsuitable comments using the superuser account<br><br>
-
-**9.** As a **site admin** I can create, read, update and delete posts from the front end of the blog site, so that I can do this quickly without having to access the administration page.
-
-_Acceptance Criteria_
-- Site admin can log in on the blog site like other registered users
-- Site admin can click on the "create post" link and create a new post and save it
-- Site admin can click on "update post" to edit the post directly on the blog site
-- Site admin can click on "delete post" to delete a post on the blog site without accessing the administration page
-
-_Test Performed_
-- Logged in to the blog site the same as other registered users
-- Can click on "Create Post" link and create a new post and save it
-- Can click on "Update Post" and "Delete Post" buttons to edit or delete the post<br><br>
-
-**10.** As a **registered user** I can log into my account so that I can use my role specific features.
+**11.** As a **registered user** I can log into my account so that I can use my role specific features.
 
 _Acceptance Criteria_
 - Registered users can log in and enter username, email address (optional) and password
@@ -315,7 +322,7 @@ _Acceptance Criteria_
 - Can leave comments
 - Can like posts<br><br>
 
-**11.** As a **registered user** I can log out of my account so that I can keep my information secure and prevent unauthorized access.
+**12.** As a **registered user** I can log out of my account so that I can keep my information secure and prevent unauthorized access.
 
 _Acceptance Criteria_
 - A user must be registered and logged in to be able to log out
@@ -330,7 +337,18 @@ _Test Performed_
 - Clicked on sign out button
 - Redirected to home page with green alert message "You have signed out"<br><br>
 
-**12.** As a **registered user** I can like or unlike a post so that I can give feedback on the content.
+**13.** As a **registered user** I can add comments on a post so that I can join in the conversation.
+
+_Acceptance Criteria_
+- Registered and logged in users can leave comments on a post
+- The name and date should be displayed with the comment
+
+_Test Performed_
+- Logged in users are presented with the comment form on the Post Detail page
+- The comment form and submit button functions as expected, and when adding a new comment, it creates a green alert "Your comment is awaiting approval" message
+- The comment functionality is only available to signed in users<br><br>
+
+**14.** As a **registered user** I can like or unlike a post so that I can give feedback on the content.
 
 _Acceptance Criteria_
 
@@ -341,21 +359,6 @@ _Acceptance Criteria_
  - Signed in users can like posts on the Post Detail page and the like functionality is only available to logged in users
  - The like this post heart icon works as expected and the number of likes increases or decreases when adding or removing a like
  - The user cannot like a post more than once<br><br>
-
-**13.** As **project creator** I need to create the base setup of the application so that other features can be added.
-
-_Acceptance Criteria_
-- The project creator must be able to install django and it frameworks and libraries to set up the app
-- THe project creator should be able to create an external database with ElephantSQL
-- The project creator should be able to deploy the project to Heroku
-
-_Test Performed_
-- Followed steps in Code Institute Django Instruction Sheet
-- When all steps completed correctly the screen "The Install Worked Successfully! Congratulations!" displayed<br><br>
-
-**14.** As a **site admin** I can configure the Administration page so that the view of this area of the blog is customized.
-
-_This user story was a **"Could Have"** and time constraints didn't allow for it to be developed_<br><br>
 
 **15.** As a **registered user** I can add posts to favourites so that I can save them and read them later.
 
