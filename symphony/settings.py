@@ -28,11 +28,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'TRUE'
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['symphonycb.herokuapp.com', 'localhost', '8000-caitriona71-symphonyblo-1aedq77crg1.ws-eu97.gitpod.io', 'https://8000-caitriona71-symphonyblo-1aedq77crg1.ws-eu97.gitpod.io']
+ALLOWED_HOSTS = ['8000-caitriona71-symphonyblo-1aedq77crg1.ws-eu114.gitpod.io', 'symphonycb.herokuapp.com', 'localhost']
 
 # To prevent 500 errors during login and registration
 ACCOUNT_EMAIL_VERIFICATION = 'none'
